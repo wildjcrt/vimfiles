@@ -2,7 +2,7 @@ h1. THIS PROJECT HAS BEEN DISCONTINUED
 
 I recommend the vimfiles from YADR (and the entire dotfiles, actually, it's quite nice and well done and maintained)
 
-  https://github.com/JeanMertz/omz-to-prezto
+  https://github.com/akitaonrails/dotfiles
 
 h1. Vim
 
