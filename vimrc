@@ -3,10 +3,10 @@ let g:CSApprox_verbose_level = 0
 
 "necessary on some Linux distros for pathogen to properly load bundles
 filetype on
-filetype off
+"filetype off
 
 "load pathogen managed plugins
-call pathogen#infect()
+execute pathogen#infect()
 
 "Use Vim settings, rather then Vi settings (much better!).
 "This must be first, because it changes other options as a side effect.
@@ -181,9 +181,9 @@ function! s:Median(nums)
 endfunction
 
 "indent settings
-set tabstop=4
-set shiftwidth=4
-set softtabstop=4
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
 set expandtab
 set autoindent
 
@@ -216,7 +216,7 @@ filetype indent on
 syntax on
 
 "some stuff to get the mouse going in term
-set mouse=a
+"set mouse=a
 set ttymouse=xterm2
 
 "hide buffers when not displayed
@@ -263,7 +263,8 @@ else
             set term=xterm-256color
             colorscheme molokai
         else
-            colorscheme default
+            "colorscheme default
+            colorscheme vividchalk
         endif
     endif
 endif
@@ -291,7 +292,7 @@ let g:buffergator_autoexpand_on_split = 0
 nnoremap <leader>t :CommandT<CR>
 
 "map Q to something useful
-noremap Q gq
+"noremap Q gq
 
 "make Y consistent with C and D
 nnoremap Y y$
